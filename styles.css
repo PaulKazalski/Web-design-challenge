@@ -1,0 +1,212 @@
+/* *****            ***** */
+/* *****  BODY CSS  ***** */
+/* *****            ***** */
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background-color: lightgray;
+}
+
+/* This is the body that I have defined.  It was going to have more features, but
+   I decided I didn't need those attributes.  Now, it's just some body. */
+.body1 {
+  background: lightgray;
+}
+
+/* *****               ***** */
+/* ***** CONTAINER CSS ***** */
+/* *****               ***** */
+
+/* This is the container for the Top Banner. The Navbar will go here. */
+.containera {
+  height: 50px;
+  width: 100%;
+}
+
+/* This is the large, left-hand container for the Home page and the 4 visual pages */
+.container1 {
+  height: 600px;
+  width: 600px;
+  background: white;
+  padding: 20px;
+  margin: 25px;
+}
+
+/* This is the smaller container on the right side of the home and visual pages.
+There is a default position and a media query position below. */
+.container2 {
+  height: 600px;
+  width:400px;
+  background: white;
+  padding: 20px;
+  margin: 25px;
+}
+
+/* This is a container specifically for the data page.*/
+.container3 {
+  height: 14600px;
+  width:900px;
+  background: white;
+  padding: 20px;
+  margin: 25px;
+}
+
+/* This is a container for the Comparison page.*/
+.container4 {
+  height: 1000px;
+  width: 1000px;
+  background: white;
+  padding: 20px;
+  margin: 25px;
+}
+
+/* This is a container for the inserts in container4*/
+.container4 li {
+  display: inline-block;
+  align-items: center;
+  height: 375px;
+  width: 425px;
+  background: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* *****            ***** */
+/* ***** MEDIAQ CSS ***** */
+/* *****            ***** */
+
+/* This media query changes the position of the right-hand container when the
+html screen contracts */    
+@media  (max-width: 1100px) {
+  .container2 {
+    height: 300px;
+    width: 775px;
+  }
+}
+
+@media  (max-width: 1000px) {
+  .container4 {
+    height: 1850px;
+    width: 500px;
+  }
+}
+
+/* *****            ***** */
+/* ***** NAVBAR CSS ***** */
+/* *****            ***** */
+
+/* Defining the Navbar */
+.navbar {
+  height: 55px;
+  background: white;
+}
+
+/* Defines how the navbar list items will look */
+.navbar li {
+  display: inline-block;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  background: #fff;
+}
+
+/* Defines the text style and color of the anchors in the list items */
+.navbar li a {
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-align: right;
+}
+
+/* Defines the "home" anchor, which must look different from the others */
+.gohome {
+  background-color: mediumaquamarine;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+}
+
+/* Defining the link anchor for the .gohome button */
+.gohome a {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+/* *****            ***** */
+/* ***** DRPBTN CSS ***** */
+/* *****            ***** */
+
+/* Creating a dropdown button class*/
+.dropbtn {
+  font-size: 15px;
+  font-weight:bold;
+  font-family: 'Times New Roman', Times, serif;
+  border: gray;
+}
+
+/* Create space for the dropdown center */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Define the content of the dropdown list */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: lightgrey;
+min-width: 20px;
+z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+/* *****            ***** */
+/* ***** ITEMS  CSS ***** */
+/* *****            ***** */
+
+/* Styling the header, giving it a height, a background color,  a bottom border and some top padding */
+.header {
+  height: 80px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: rgba(0, 0, 0, 0.11);
+  border-bottom-style: solid;
+}
+
+/* Defines the text of the header */
+.header h1 {
+  font-size: 40px;
+  color: mediumaquamarine;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Defines the border around a chosen image */
+.img1 {
+  width: 175px;
+  height: 175px;
+  border: 3px solid mediumaquamarine;
+}
+
+.container4 li a img {
+  width: 350px;
+  height: 300px;
+}
+
+h3 {
+  color: mediumaquamarine;
+}
+
+
+
+h2 {
+  font-size: 40px;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
